@@ -1,0 +1,27 @@
+﻿  Source.cpp
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(25,11): warning C4473: 'wscanf_s' : not enough arguments passed for format string
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(25,11): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(25,11): message : the missing variadic argument 2 is required by format string '%s'
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(25,11): message : this argument is used as a buffer size
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(27,11): warning C4473: 'wscanf_s' : not enough arguments passed for format string
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(27,11): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(27,11): message : the missing variadic argument 2 is required by format string '%s'
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(27,11): message : this argument is used as a buffer size
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(61,11): warning C4473: 'wscanf_s' : not enough arguments passed for format string
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(61,11): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(61,11): message : the missing variadic argument 2 is required by format string '%s'
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(61,11): message : this argument is used as a buffer size
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(63,11): warning C4473: 'wscanf_s' : not enough arguments passed for format string
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(63,11): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(63,11): message : the missing variadic argument 2 is required by format string '%s'
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(63,11): message : this argument is used as a buffer size
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(97,11): warning C4473: 'wscanf_s' : not enough arguments passed for format string
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(97,11): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(97,11): message : the missing variadic argument 2 is required by format string '%s'
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(97,11): message : this argument is used as a buffer size
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(99,11): warning C4473: 'wscanf_s' : not enough arguments passed for format string
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(99,11): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(99,11): message : the missing variadic argument 2 is required by format string '%s'
+D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(99,11): message : this argument is used as a buffer size
+     Creating library D:\std\TP\6\ConfrontationDLL\Debug\ConfrontationDLL.lib and object D:\std\TP\6\ConfrontationDLL\Debug\ConfrontationDLL.exp
+  ConfrontationDLL.vcxproj -> D:\std\TP\6\ConfrontationDLL\Debug\ConfrontationDLL.exe

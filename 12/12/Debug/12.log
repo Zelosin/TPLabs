@@ -1,0 +1,5 @@
+﻿  Source.cpp
+D:\std\TP\12\12\Source.cpp(142,3): warning C4286: 'CMyException2Space::CMyException2 &': is caught by base class ('CMyExceptionSpace::CMyException &') on line 139
+D:\std\TP\12\12\Source.cpp(145,3): warning C4286: 'CMyException3Space::CMyException3 &': is caught by base class ('CMyExceptionSpace::CMyException &') on line 139
+D:\std\TP\12\12\Source.cpp(152,12): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  12.vcxproj -> D:\std\TP\12\Debug\12.exe
