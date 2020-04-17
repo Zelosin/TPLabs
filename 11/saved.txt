@@ -1,0 +1,16 @@
+	/*string tDeleteCondidate;
+
+	do {
+		for (mLocalityMultimapIterator = mLocalityMultimap.begin(); mLocalityMultimapIterator != mLocalityMultimap.end(); mLocalityMultimapIterator++)
+			mLocalityMultimapIterator->second->Output();
+		cout << "Input a name of region which could be deleted: ";
+		cin >> tDeleteCondidate;
+		mLocalityMultimapIterator = mLocalityMultimap.find(tDeleteCondidate);
+		if (mLocalityMultimapIterator != mLocalityMultimap.end()) {
+			mLocalityMultimap.erase(mLocalityMultimapIterator);
+		}
+		else {
+			cout << "The container does not contains inputed name" << endl;
+		}
+	} while (!(tDeleteCondidate.empty()));
+	cout << endl;*/

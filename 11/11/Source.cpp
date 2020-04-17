@@ -18,7 +18,6 @@ class Locality{
 public:
 
 	string Name;
-
 	string Region;
 
 	Locality() :
@@ -152,33 +151,130 @@ public: int ShopCount;
 };
 
 int main() {
+	int mCountOfIterations;
+	int mPrimitiveSample;
+	int tDeleteCondidate;
 
-	std::multimap<string, Locality*> mLocalityMultimap;
-	std::multimap<string, Locality*>::iterator mLocalityMultimapIterator;
+	/// PRIMITIVES ///
 
-	Locality* SampleLocality;
-	for (int i = 0; i < 2; i++) {
-		SampleLocality = new Locality();
-		SampleLocality->Input();
-		mLocalityMultimap.insert(std::pair<string, Locality*>(SampleLocality->Name, SampleLocality));
+
+
+	std::multimap<int, int> mPrimitiveMultimap;
+	std::multimap<int, int>::iterator mPrimitiveMultimapIterator;
+
+	std::cout << "Input a count of key's objects in multimap for primitives: ";
+	std::cin >> mCountOfIterations;
+
+	for (int tItr = 0; tItr < mCountOfIterations; tItr++) {
+		std::cout << "Input a number: "; std::cin >> mPrimitiveSample;
+		mPrimitiveMultimap.insert(std::pair<int, int>(tItr, mPrimitiveSample));
 	}
 
-	string tDeleteCondidate;
+	std::cout << "\nAll values in multimap with primitives" << std::endl;
 
-	do {
-		for (mLocalityMultimapIterator = mLocalityMultimap.begin(); mLocalityMultimapIterator != mLocalityMultimap.end(); mLocalityMultimapIterator++)
-			mLocalityMultimapIterator->second->Output();
-		cout << "Input a name of region which could be deleted: ";
-		cin >> tDeleteCondidate;
-		mLocalityMultimapIterator = mLocalityMultimap.find(tDeleteCondidate);
-		if (mLocalityMultimapIterator != mLocalityMultimap.end()) {
-			mLocalityMultimap.erase(mLocalityMultimapIterator);
-		}
-		else {
-			cout << "The container does not contains inputed name" << endl;
-		}
-	} while (!(tDeleteCondidate.empty()));
-	cout << endl;
+	for (mPrimitiveMultimapIterator = mPrimitiveMultimap.begin(); mPrimitiveMultimapIterator != mPrimitiveMultimap.end(); ++mPrimitiveMultimapIterator)
+		std::cout << (*mPrimitiveMultimapIterator).first << " => " << (*mPrimitiveMultimapIterator).second << '\n';
+
+
+	cout << "Input a number of region which could be deleted: "; cin >> tDeleteCondidate;
+	mPrimitiveMultimapIterator = mPrimitiveMultimap.find(tDeleteCondidate);
+	if (mPrimitiveMultimapIterator != mPrimitiveMultimap.end()) {
+		mPrimitiveMultimap.erase(mPrimitiveMultimapIterator);
+	}
+	else {
+		cout << "The container does not contains inputed name" << endl;
+	}
+
+	std::cout << "\nAll values in multimap with primitives after deleteting" << std::endl;
+
+	for (mPrimitiveMultimapIterator = mPrimitiveMultimap.begin(); mPrimitiveMultimapIterator != mPrimitiveMultimap.end(); ++mPrimitiveMultimapIterator)
+		std::cout << (*mPrimitiveMultimapIterator).first << " => " << (*mPrimitiveMultimapIterator).second << '\n';
+
+
+	///			 ///
+
+	/// POINTERS ///
+
+
+	std::cout << "Input a count of key's objects in multimap for Locality pointers: ";
+	std::cin >> mCountOfIterations;
+
+	std::multimap<int, Locality*> mLocalityMultimap;
+	std::multimap<int, Locality*>::iterator mLocalityMultimapIterator;
+
+	Locality* SampleLocality;
+	for (int i = 0; i < mCountOfIterations; i++) {
+		std::cout << "Input a number-key: "; std::cin >> mPrimitiveSample;
+		SampleLocality = new Locality();
+		SampleLocality->Input();
+		mLocalityMultimap.insert(std::pair<int, Locality*>(mPrimitiveSample, SampleLocality));
+	}
+
+	for (mLocalityMultimapIterator = mLocalityMultimap.begin(); mLocalityMultimapIterator != mLocalityMultimap.end(); mLocalityMultimapIterator++) {
+		std::cout << mLocalityMultimapIterator->first << " => ";
+		mLocalityMultimapIterator->second->Output();
+	}
+		
+
+	cout << "Input a number of region which could be deleted: "; cin >> tDeleteCondidate;
+	mLocalityMultimapIterator = mLocalityMultimap.find(tDeleteCondidate);
+	if (mLocalityMultimapIterator != mLocalityMultimap.end()) {
+		mLocalityMultimap.erase(mLocalityMultimapIterator);
+	}
+	else {
+		cout << "The container does not contains inputed name" << endl;
+	}
+
+	std::cout << "\nAll values in multimap with pointers after deleteting" << std::endl;
+
+	for (mLocalityMultimapIterator = mLocalityMultimap.begin(); mLocalityMultimapIterator != mLocalityMultimap.end(); mLocalityMultimapIterator++) {
+		std::cout << mLocalityMultimapIterator->first << " => ";
+		mLocalityMultimapIterator->second->Output();
+	}
+
+	///			///
+
+	/// OBJECTS	///
+
+
+	std::cout << "Input a count of key's objects in multimap for Locality objects: ";
+	std::cin >> mCountOfIterations;
+
+	std::multimap<int, Locality> mLocalityMultimapObjects;
+	std::multimap<int, Locality>::iterator mLocalityMultimapIteratorObjects;
+
+	for (int i = 0; i < mCountOfIterations; i++) {
+		std::cout << "Input a number-key: "; std::cin >> mPrimitiveSample;
+		Locality LocalityObject;
+		LocalityObject.Input();
+		mLocalityMultimapObjects.emplace(mPrimitiveSample, LocalityObject);
+	}
+
+	for (mLocalityMultimapIteratorObjects = mLocalityMultimapObjects.begin();
+		mLocalityMultimapIteratorObjects != mLocalityMultimapObjects.end();
+		mLocalityMultimapIteratorObjects++) {
+		std::cout << mLocalityMultimapIteratorObjects->first << " => ";
+		mLocalityMultimapIteratorObjects->second.Output();
+	}
+
+
+	cout << "Input a number of region which could be deleted: "; cin >> tDeleteCondidate;
+	mLocalityMultimapIteratorObjects = mLocalityMultimapObjects.find(tDeleteCondidate);
+	if (mLocalityMultimapIteratorObjects != mLocalityMultimapObjects.end()) {
+		mLocalityMultimapObjects.erase(mLocalityMultimapIteratorObjects);
+	}
+	else {
+		cout << "The container does not contains inputed name" << endl;
+	}
+
+	std::cout << "\nAll values in multimap with objects after deleteting" << std::endl;
+
+	for (mLocalityMultimapIteratorObjects = mLocalityMultimapObjects.begin();
+		mLocalityMultimapIteratorObjects != mLocalityMultimapObjects.end();
+		mLocalityMultimapIteratorObjects++) {
+		std::cout << mLocalityMultimapIteratorObjects->first << " => ";
+		mLocalityMultimapIteratorObjects->second.Output();
+	}
 
 	_getch();
 	return 1;
