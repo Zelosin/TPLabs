@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Confrontation
 {
-    class City : Locality
+    class City : Locality, InputInterface
     {
         public bool isRegionCenter;
         public override void output()

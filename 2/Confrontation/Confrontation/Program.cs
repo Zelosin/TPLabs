@@ -9,19 +9,22 @@ namespace Confrontation {
     class Program{
     static void Main(string[] args){
 
-            Village SampleVillage = new Village();
-            SampleVillage.input();
+            InputInterface inputInterface;
+            OutputAbstract outputAbstract;
 
-            Village SecondVillageSample = new Village();
-            SecondVillageSample.input();
 
-            Console.WriteLine(SampleVillage <= 5);
-            Console.WriteLine(SampleVillage <= "sdzxc");
-            Console.WriteLine(SampleVillage <= SecondVillageSample);
+            Locality SampleLocality = new Locality();
+             inputInterface = SampleLocality;
+             inputInterface.input();
+             outputAbstract = SampleLocality;
+             outputAbstract.output();
+             
+            Village SampleCity = new Village();
+            inputInterface = SampleCity;
+            inputInterface.input();
+            outputAbstract = SampleCity;
+            outputAbstract.output();
 
-            Console.WriteLine((SampleVillage & 5).Name);
-            Console.WriteLine((SampleVillage & "Test").Name);
-            Console.WriteLine((SampleVillage & SecondVillageSample).Name);
 
             Console.Read();
            

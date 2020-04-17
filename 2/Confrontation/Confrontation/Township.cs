@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Confrontation
 {
-    class Township : Locality
+    class Township : Locality, InputInterface
     {
         public int SchoolCount;
         public override void output()

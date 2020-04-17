@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Confrontation
 {
-    class Village : Township
+    class Village : Township, InputInterface
     {
         public int ShopCount;
         public override void output()
