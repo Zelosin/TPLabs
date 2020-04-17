@@ -1,27 +1,8 @@
-﻿  Source.cpp
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(25,11): warning C4473: 'wscanf_s' : not enough arguments passed for format string
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(25,11): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(25,11): message : the missing variadic argument 2 is required by format string '%s'
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(25,11): message : this argument is used as a buffer size
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(27,11): warning C4473: 'wscanf_s' : not enough arguments passed for format string
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(27,11): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(27,11): message : the missing variadic argument 2 is required by format string '%s'
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(27,11): message : this argument is used as a buffer size
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(61,11): warning C4473: 'wscanf_s' : not enough arguments passed for format string
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(61,11): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(61,11): message : the missing variadic argument 2 is required by format string '%s'
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(61,11): message : this argument is used as a buffer size
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(63,11): warning C4473: 'wscanf_s' : not enough arguments passed for format string
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(63,11): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(63,11): message : the missing variadic argument 2 is required by format string '%s'
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(63,11): message : this argument is used as a buffer size
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(97,11): warning C4473: 'wscanf_s' : not enough arguments passed for format string
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(97,11): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(97,11): message : the missing variadic argument 2 is required by format string '%s'
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(97,11): message : this argument is used as a buffer size
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(99,11): warning C4473: 'wscanf_s' : not enough arguments passed for format string
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(99,11): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(99,11): message : the missing variadic argument 2 is required by format string '%s'
-D:\std\TP\6\ConfrontationDLL\ConfrontationDLL\Source.cpp(99,11): message : this argument is used as a buffer size
-     Creating library D:\std\TP\6\ConfrontationDLL\Debug\ConfrontationDLL.lib and object D:\std\TP\6\ConfrontationDLL\Debug\ConfrontationDLL.exp
-  ConfrontationDLL.vcxproj -> D:\std\TP\6\ConfrontationDLL\Debug\ConfrontationDLL.exe
+﻿D:\IDE\VS19\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(445,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+D:\IDE\VS19\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(459,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ConfrontationDLL.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Source.cpp
+D:\std\TP\saved6\ConfrontationDLL\ConfrontationDLL\Source.cpp(7,32): warning C4081: expected ':'; found ','
+D:\std\TP\saved6\ConfrontationDLL\ConfrontationDLL\Source.cpp(36,1): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstring.h(123): message : see declaration of 'wcscpy'
+     Creating library ..\..\6\Confrontation\Confrontation\bin\Debug\DLLdl.lib and object ..\..\6\Confrontation\Confrontation\bin\Debug\DLLdl.exp
+  ConfrontationDLL.vcxproj -> D:\std\TP\saved6\ConfrontationDLL\ConfrontationDLL\..\..\6\Confrontation\Confrontation\bin\Debug\DLLdl.dll

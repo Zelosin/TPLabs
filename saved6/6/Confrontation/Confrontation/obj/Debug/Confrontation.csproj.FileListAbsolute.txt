@@ -34,3 +34,9 @@ D:\std\TP\saved6\6\Confrontation\Confrontation\bin\Debug\Confrontation.pdb
 D:\std\TP\saved6\6\Confrontation\Confrontation\obj\Debug\Confrontation.csprojAssemblyReference.cache
 D:\std\TP\saved6\6\Confrontation\Confrontation\obj\Debug\Confrontation.exe
 D:\std\TP\saved6\6\Confrontation\Confrontation\obj\Debug\Confrontation.pdb
+C:\Users\theze\Desktop\urod\6\Confrontation\Confrontation\bin\Debug\Confrontation.exe.config
+C:\Users\theze\Desktop\urod\6\Confrontation\Confrontation\bin\Debug\Confrontation.exe
+C:\Users\theze\Desktop\urod\6\Confrontation\Confrontation\bin\Debug\Confrontation.pdb
+C:\Users\theze\Desktop\urod\6\Confrontation\Confrontation\obj\Debug\Confrontation.csprojAssemblyReference.cache
+C:\Users\theze\Desktop\urod\6\Confrontation\Confrontation\obj\Debug\Confrontation.exe
+C:\Users\theze\Desktop\urod\6\Confrontation\Confrontation\obj\Debug\Confrontation.pdb
